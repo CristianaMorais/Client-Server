@@ -1,93 +1,108 @@
-# Trabalho de Laboratório de Computadores em C
+# 🛒 Supermarket Management System
+A comprehensive C-based client-server system designed to manage supermarket operations, including inventory control, customer management, and sales analytics. The system features separate client and server applications with dedicated functionalities for customers and administrators.
+
+### 👥 Authors
+* Cristiana Morais da Silva - up201505454
+* Sara Daniela Ferreira de Sousa - up201504217
+
+### 🏗️ System Architecture
+
+📱 Client Application
+Customer-facing interface for shopping operations
+
+🚀 Compilation
+```bash
+$ gcc client.c -o client
+```
+
+⚡ Features
+* 💰 Balance Management - Add funds, check balance, transaction history
+* 🛍️ Shopping List Management - Create, edit, and manage shopping lists
+* 📊 Personal Statistics - View purchase history and spending analytics
+* 🔐 Secure Logout - Safe session termination
 
 
-## Trabalho realizado por:
+### 🖥️ Server Application
 
--Cristiana Morais da Silva up201505454
+Administrative interface for supermarket management
 
--Sara Daniela Ferreira de Sousa up201504217
+🚀 Compilation
+```bash
+$ gcc server.c -o server
+```
 
+###⚡ Features
+* 👤 User Management - Create and manage customer accounts
+* 📦 Inventory Control - Complete stock management system
+* 📈 Business Analytics - Comprehensive sales and profit reporting
+* 🔐 Admin Controls - Secure administrative access
+* 📦 Inventory Management System
 
-# Cliente
+### Product Operations
+* ➕ Add Products - Sequential code assignment, description, quantity, cost/price per unit
+* ✏️ Update Products - Modify quantity, costs, and pricing
+* 🗑️ Remove Products - Delete items from inventory
+* 🔍 Product Lookup - Search and filter product catalog
 
+### Key Features
+* 🏷️ Sequential Product Codes - Automatic ID generation
+* 💵 Cost/Price Tracking - Purchase cost vs. selling price management
+* 📊 Stock Level Monitoring - Real-time quantity tracking
+* 📈 Analytics & Reporting
 
-## Instruções de Compilação
+### Sales Analytics
+* 📊 Total Sales Volume - Overall product sales tracking
+* 🎯 Product-Specific Sales - Individual product performance
+* 💰 Profit Analysis - Revenue and margin calculations per product
+* 👤 Customer Analytics - Purchase history and behavior analysis
 
-$ gcc main.c -o cliente (falta coisas)
+### Business Intelligence
+* 📉 Sales Trends - Historical sales data analysis
+* 🏆 Top Products - Best-selling items identification
+* 💳 Customer Insights - Shopping pattern analysis
+* 🛠️ Technical Details
 
+### 🚀 Getting Started
+Compile the applications:
 
-## Menu Cliente
+# Server
+```bash
+$ gcc server.c -o server
+```
 
-1) Gerir Saldo
+# Client
+```bash
+$ gcc client.c -o client
+```
 
-2) Gerir Lista de Compras
+#### Start the server:
+```bash
+$ ./server
+```
 
-3) Ver Estatisticas
+#### Connect clients:
+```bash
+$ ./client
+```
 
-4) Logout
+#### 📋 Usage Instructions
+* For Customers (Client)
+** Login or register new account
+** Manage account balance
+** Create and manage shopping lists
+** View purchase statistics
+** Secure logout
 
+* For Administrators (Server)
+** Access admin panel
+** Create customer accounts
+** Manage product inventory
+** Monitor sales analytics
+** Generate business reports
 
-## O Cliente apresenta as seguinte funcionalidades:
-
-• Gerir Saldo
-
-• Gerir Listas de Compras
-
-• Ver Estatísticas
-
-• Logout
-
-
-# Servidor
-
-
-## Instruções de Compilação
-
-$ gcc main.c -o cliente (falta coisas)
-
-
-## Menu Servidor
-
-1) Criar Novo Utilizador
-
-2) Gerir Stocks
-
-3) Ver Estatisticas
-
-4) Logout
-
-
-## Funcionalidades Servidor
-
-O Servidor apresenta as seguinte funcionalidades:
-
- Criar Novo Utilizador
-
- Gerir Stocks
-
- Ver Estatísticas
-
- Logout
-
-
-## Gerir Stocks
-
-Nesta funcionalidade, o gestor do supermercado poderá incluir um novo produto,
-especificando o codigo (que deverá ser sequencial), descrição, quantidade, custo
-(compra) por unidade e o preço (venda) por unidade. Poderá também alterar
-a quantidade, custo e preço de um produto existente, bem como eliminar um
-produto do sistema.
-
-
-## Ver Estatísticas
-
-Nesta funcionalidade, o gestor do supermercado poderá ver estatisticas relacionadas
-com os produtos e clientes, como por exemplo:
-
-• Quantidade de produtos vendidos no total;
-
-• Quantidade vendida de um determinado produto;
-
-• Lucro de um determinado produto;
-
-• Analisar os produtos comprados por um determinado cliente;
+### 🔮 Future Enhancements
+* 🌐 Web-based interface
+* 🔒 Enhanced security features
+* 📱 Mobile application support
+* 💳 Payment gateway integration
+* 🤖 AI-powered recommendations
